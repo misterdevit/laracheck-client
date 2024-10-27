@@ -1,0 +1,29 @@
+{
+    "name": "misterdevit/laracheck",
+    "description": "Laravel Package for Laracheck.",
+    "homepage": "https://github.com/misterdevit/laracheck-client",
+    "license": "MIT",
+    "type": "package",
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MisterDev\\Laracheck\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MisterDev\\Laracheck\\LaracheckServiceProvider"
+            ],
+            "aliases": {
+                "Laracheck": "MisterDev\\Laracheck\\LaracheckFacade"
+            }
+        }
+    }
+}
